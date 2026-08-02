@@ -1,17 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Ship Challenge List</title>
-</head>
-<body>
-<h1>The Ship Challenge List</h1>
-<p>Welcome to the hardest ship challenges!</p>
 
-<ol>
-<li>Level 1</li>
-<li>Level 2</li>
-<li>Level 3</li>
-</ol>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#1a1a1a;
+    padding:20px;
+    text-align:center;
+    border-bottom:3px solid #ff4444;
+}
+
+h1{
+    margin:0;
+    color:#ff4444;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.challenge{
+    background:#1f1f1f;
+    padding:15px;
+    margin:15px 0;
+    border-radius:10px;
+    transition:.2s;
+}
+
+.challenge:hover{
+    transform:scale(1.02);
+}
+
+.rank{
+    color:#ff4444;
+    font-size:24px;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🚀 The Ship Challenge List</h1>
+<p>The hardest ship challenges in Geometry Dash.</p>
+</header>
+
+<div class="container">
+
+<div class="challenge">
+<div class="rank">#1</div>
+<h2>Challenge Name</h2>
+<p>Creator: YourName</p>
+</div>
+
+<div class="challenge">
+<div class="rank">#2</div>
+<h2>Challenge Name</h2>
+<p>Creator: Someone</p>
+</div>
+
+<div class="challenge">
+<div class="rank">#3</div>
+<h2>Challenge Name</h2>
+<p>Creator: Another Person</p>
+</div>
+
+</div>
 
 </body>
 </html>
