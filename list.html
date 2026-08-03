@@ -1,33 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main List - The Ship Challenge List</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Main List - The Ship Challenge List</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0b0b0b;
+font-family:Arial,Helvetica,sans-serif;
+color:white;
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+background:#111;
+
+border-bottom:1px solid #222;
+
+flex-wrap:wrap;
+
+}
+
+.logo{
+
+font-size:28px;
+
+font-weight:bold;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.2s;
+
+}
+
+nav a:hover{
+
+color:#58a6ff;
+
+}
+
+header{
+
+text-align:center;
+
+padding:70px 20px;
+
+background:linear-gradient(180deg,#151515,#0b0b0b);
+
+}
+
+header h1{
+
+font-size:50px;
+
+margin-bottom:10px;
+
+}
+
+header p{
+
+color:#9c9c9c;
+
+font-size:20px;
+
+}
+
+.search{
+
+max-width:800px;
+
+margin:40px auto;
+
+padding:0 20px;
+
+}
+
+.search input{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:#171717;
+
+color:white;
+
+font-size:18px;
+
+outline:none;
+
+}
+
+.list{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:20px;
+
+}
+
+.challenge{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:#171717;
+
+padding:20px;
+
+margin-bottom:18px;
+
+border-radius:12px;
+
+border:1px solid #292929;
+
+transition:.2s;
+
+}
+
+.challenge:hover{
+
+transform:translateY(-3px);
+
+}
+
+.rank{
+
+font-size:38px;
+
+font-weight:bold;
+
+color:#58a6ff;
+
+width:90px;
+
+}
+
+.info{
+
+flex:1;
+
+}
+
+.button{
+
+background:#4da3ff;
+
+padding:12px 20px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:bold;
+
+}
+
+.button:hover{
+
+background:#2f8df2;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
 <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="list.html">🏆 Main List</a>
-</nav>
-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    text-align: center;
-}
-    
-<h1>🏆 Main List</h1>
 
-<div class="challenge-card">
-    <h2>#1 Challenge Name</h2>
-    <p><strong>Creator:</strong> YourName</p>
-    <p><strong>Verifier:</strong> VerifierName</p>
-    <p><strong>Publisher:</strong> PublisherName</p>
-    <p><strong>ID:</strong> 123456</p>
+<div class="logo">
+
+Ship Challenge List
+
 </div>
 
-</body>
-</html>
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="list.html">Main List</a></li>
+<li><a href="rules.html">Rules</a></li>
+<li><a href="team.html">Team</a></li>
+
+</ul>
+
+</nav>
+
+<header>
+
+<h1>Main List</h1>
+
+<p>The hardest ship challenges in Geometry Dash.</p>
+
+</header>
+
+<div class="search">
+
+<input type="text" placeholder="Search challenges...">
+
+</div>
+
+<div class="list">
