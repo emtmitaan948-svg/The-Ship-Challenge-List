@@ -300,5 +300,88 @@ background:#2f8df2;
 🎥 Watch
 
 </a>
+  <div class="challenge">
+
+<div class="rank">#4</div>
+
+<div class="info">
+
+<h2>Coming Soon...</h2>
+
+<p>👤 <strong>Creator:</strong> -</p>
+
+<p>✅ <strong>Verifier:</strong> -</p>
+
+<p>🆔 <strong>Level ID:</strong> -</p>
+
+<p>⭐ <strong>Difficulty:</strong> 97.75 pts</p>
+
+<p>🏅 <strong>Victors:</strong> 0</p>
+
+</div>
+
+<a class="button" href="#">🎥 Watch</a>
+
+</div>
+
+<div class="challenge">
+
+<div class="rank">#5</div>
+
+<div class="info">
+
+<h2>Coming Soon...</h2>
+
+<p>👤 <strong>Creator:</strong> -</p>
+
+<p>✅ <strong>Verifier:</strong> -</p>
+
+<p>🆔 <strong>Level ID:</strong> -</p>
+
+<p>⭐ <strong>Difficulty:</strong> 97.00 pts</p>
+
+<p>🏅 <strong>Victors:</strong> 0</p>
+
+</div>
+
+<a class="button" href="#">🎥 Watch</a>
+
+</div>
+
+</div>
+
+<footer style="text-align:center;padding:40px;color:#777;border-top:1px solid #222;margin-top:60px;">
+
+<p>© 2026 The Ship Challenge List</p>
+
+<p>Geometry Dash is © RobTop Games.</p>
+
+<p>Fan-made community project.</p>
+
+</footer>
+
+<script>
+
+const search=document.querySelector("input");
+
+const cards=document.querySelectorAll(".challenge");
+
+search.addEventListener("keyup",()=>{
+
+const value=search.value.toLowerCase();
+
+cards.forEach(card=>{
+
+card.style.display=card.innerText.toLowerCase().includes(value) ? "flex" : "none";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
 
 </div>
