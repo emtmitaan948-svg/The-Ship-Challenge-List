@@ -350,3 +350,47 @@ Ship Challenge List
 <a class="button" href="#">Video</a>
 
 </div>
+</div>
+
+<footer style="text-align:center;padding:40px;color:#777;border-top:1px solid #222;margin-top:60px;">
+
+<p>© 2026 The Ship Challenge List</p>
+
+<p>Geometry Dash is © RobTop Games.</p>
+
+<p>Fan-made community project.</p>
+
+</footer>
+
+<script>
+
+const search = document.querySelector("input");
+
+const challenges = document.querySelectorAll(".challenge");
+
+search.addEventListener("keyup", function(){
+
+const value = search.value.toLowerCase();
+
+challenges.forEach(function(challenge){
+
+const text = challenge.innerText.toLowerCase();
+
+if(text.includes(value)){
+
+challenge.style.display="flex";
+
+}else{
+
+challenge.style.display="none";
+
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
